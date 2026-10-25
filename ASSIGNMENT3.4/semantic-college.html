@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Invertis University | College Information</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f5f9;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #123b70;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #09294f;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        .content-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        section, article, aside {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2, h3 {
+            color: #123b70;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #123b70;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 650px) {
+            .content-layout {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Semantic page header -->
+    <header>
+        <h1>Invertis University</h1>
+        <p>College Information Portal</p>
+    </header>
+
+    <!-- Navigation links -->
+    <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#notice">Notice</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main page content -->
+    <main>
+        <div class="content-layout">
+
+            <div>
+                <!-- University information -->
+                <section id="about">
+                    <h2>About the University</h2>
+
+                    <p>
+                        Invertis University is located in Bareilly,
+                        Uttar Pradesh, India.
+                    </p>
+
+                    <img
+                        src="images/campus.jpg"
+                        alt="University campus building"
+                        width="600"
+                        height="300"
+                    >
+                </section>
+
+                <!-- Course information -->
+                <section id="courses">
+                    <h2>Courses and Subjects</h2>
+
+                    <article>
+                        <h3>B.Tech Electrical Engineering</h3>
+                        <p>
+                            This programme introduces students to
+                            electrical circuits, machines, power systems,
+                            and engineering principles.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Engineering Mathematics</h3>
+                        <p>
+                            Students study matrices, calculus,
+                            differential equations, and other
+                            mathematical methods.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Engineering Physics</h3>
+                        <p>
+                            Students learn physical principles and
+                            their applications in engineering.
+                        </p>
+                    </article>
+                </section>
+            </div>
+
+            <!-- Related information -->
+            <aside id="notice">
+                <h2>Important Notice</h2>
+
+                <p>
+                    Students should regularly check official
+                    university announcements for updates.
+                </p>
+
+                <h3>Student Reminder</h3>
+                <p>
+                    Keep your academic documents and assignment
+                    submissions organized.
+                </p>
+            </aside>
+
+        </div>
+
+        <!-- Contact information -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+
+            <p>
+                For admission and course information, visit the
+                <a href="https://www.invertisuniversity.ac.in/">
+                    official Invertis University website
+                </a>.
+            </p>
+        </section>
+    </main>
+
+    <!-- Semantic page footer -->
+    <footer>
+        <p>Assignment 3.4 - Semantic HTML &amp; Accessibility</p>
+        <p>B.Tech Electrical Engineering</p>
+    </footer>
+
+</body>
+</html>
